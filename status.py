@@ -9,9 +9,9 @@ if len(sys.argv) > 1:
 else:
     hito = None
 
-if hito == none:
+if hito == None:
     r=requests.get('http://'+host+'/status')
 else:
     r=requests.get('http://'+host+'/one'+hito)
 
-peint (r.status_code, "\n", r.text)
+print (r.status_code, "\n", r.text)
